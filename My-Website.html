@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial;
+        margin: 0;
+      }
+      /* style the header*/
+      .header {
+        padding: 2px; /* some padding */
+        text-align: center; /* center the text */
+        background: #1abc9c; /* green background */
+        color: white; /* white text color */
+      }
+      /* Increase the font size of the <h1> element */
+      .header h1 {
+        font-size: 40px;
+      }
+      /* Style the top navigation bar */
+      .navbar {
+        overflow: hidden; /* Hide overflow */
+        background-color: #333; /* Dark background color */
+      }
+
+      /* Style the navigation bar links */
+      .navbar a {
+        float: left; /* Make sure that the links stay side-by-side */
+        display: block; /* Change the display to block, for responsive reasons (see below) */
+        color: white; /* White text color */
+        text-align: center; /* Center the text */
+        padding: 14px 20px; /* Add some padding */
+        text-decoration: none; /* Remove underline */
+      }
+
+      /* Right-aligned link */
+      .navbar a.right {
+        float: right; /* Float a link to the right */
+      }
+
+      /* Change color on hover/mouse-over */
+      .navbar a:hover {
+        background-color: yellowgreen; /* Grey background color */
+        color: black; /* Black text color */
+      }
+
+      /* Column container */
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      /* Create two unequal columns that sits next to each other */
+      /* Sidebar/left column */
+      .side {
+        flex: 20%; /*set the width of sidebar*/
+        background-color: #f1f1f1; /*grey background color */
+        padding: 30px; /* some padding */
+      }
+      /*Main column*/
+      .main {
+        flex: 80%; /*Set the width of the main content*/
+        background-color: lightgreen; /*white background-color*/
+        padding: 20px;
+      }
+      /*Responsive layout- when the screen is less than 400px wide,make the two columns stack on top of each other instead of next to each other*/
+      @media screen and (max-width: 300px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+      /*Responsive layout- when the screen is less than 300px wide, make the navigation links stack on top of each other instead of next to each other*/
+      @media screen and (max-width: 300px) {
+        .navbar a {
+          float: none;
+          width: 100%;
+        }
+      }
+      .img {
+        height: auto;
+        width: 150px;
+      }
+      .img2 {
+        height: 300px;
+        width: auto;
+      }
+      .link {
+        width: 40px;
+        height: auto;
+      }
+      .footer {
+        padding: 20px; /* some padding*/
+        text-align: center; /* center text*/
+        background: lightblue; /* grey background*/
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>My Website</h1>
+      <h3>A Website Page created by Shashi Hans.</h3>
+    </div>
+
+    <div class="navbar">
+      <a href="#"><img src="./twitter.jpg" class="link" /></a>
+      <a href="#"><img src="./facebook.jpg" class="link" /></a>
+      <a href="#"><img src="./insta.jpg" class="link" /></a>
+      <a href="#" class="right">
+        <img src="./whatsapp icon.jpg" class="link" />
+      </a>
+    </div>
+
+    <div class="row">
+      <div class="side">
+        <h2>About Me</h2>
+        <h4>Photo of me:</h4>
+        <div>
+          <img src="./photo.png" class="img" />
+        </div>
+        <p>I'm Shashi Hans</p>
+        <h3>More Text & Pic</h3>
+        <div>
+          <img src="./workplace.jpg" class="img" />
+        </div>
+        <p>My WorkPlace</p>
+        <br />
+        <div>
+          <div>
+            <img
+              src="./meme-thik-hai.jpeg"
+              class="img"
+            />
+            <p>Meme 4 U</p>
+          </div>
+          <br />
+          <img
+            src="./harry-potter.png"
+            class="img"
+          />
+          <p>Movie Ticket</p>
+        </div>
+      </div>
+      <div class="main">
+        <h2>Lord RAAM with Vibhishan</h2>
+        <h5>Title description -- War zone of Ancient Mythological peroid</h5>
+        <img src="./kill-ravan.jpeg" class="img2" />
+        <p>A Pic from RAMAYAN</p>
+        <p>
+          When Vibhishan was brought to RAAMji, as soon as he saw Lord Ram, he
+          fell to Lord RAAM’s feet. Lord RAAM raised Vibhishan as he addressed
+          him Lankesh (the king of Lanka). Vibhishan told Lord Ram, “I tried to
+          persuade Ravan but he didn’t listen, kicked me and banished me. I have
+          now come to your refuge. I have heard your qualities and praise from
+          Hanuman. Please accept me.”
+        </p>
+        <p>
+          In that legendary war Vibhishan told Lord RAAM the way to kill Ravan
+        </p>
+        <br />
+        <h2>A Poem</h2>
+        <h5>#Title description - Evening Scenery</h5>
+        <img src="./img_0554.JPG" class="img2" />
+        <p>
+          In the evening, love returns, Like a wand’rer ’cross the sea;<br />In
+          the evening, love returns, With a violet for me;<br />In the evening,
+          life’s a song, And the fields are full of green; <br />All the stars
+          are golden crowns, And the eye of God is keen.
+        </p>
+        <p>By_Fenton Johnson</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h2>Footer == It Means END of the Page</h2>
+    </div>
+  </body>
+</html>
